@@ -2,76 +2,36 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        int age1 = 18;
-        int age2 = 16;
-        if (age1 >= 18) {
-            System.out.println("Если возраст человека равен " + age1 + " он совершеннолетний.");
+        int age = 14;
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " + age + " он совершеннолетний.");
         } else {
-            System.out.println("Если возраст человека равен " + age1 + " он не достиг совершеннолетия, нужно немного подождать.");
-        }
-        if (age2 >= 18) {
-            System.out.println("Если возраст человека равен " + age2 + " он совершеннолетний.");
-        } else {
-            System.out.println("Если возраст человека равен " + age2 + " он не достиг совершеннолетия, нужно немного подождать.");
+            System.out.println("Если возраст человека равен " + age + " он не достиг совершеннолетия, нужно немного подождать.");
         }
 
-        int temperature1 = 7;
-        int temperature2 = 3;
-        System.out.println("На улице " + temperature1 + " градусов.");
-        if (temperature1 > 5) {
-            System.out.println("Сегодня тепло, можно идти без шапки.");
-        } else {
-            System.out.println("На улице холодно, нужно надеть шапку.");
-        }
-        System.out.println("На улице " + temperature2 + " градуса.");
-        if (temperature2 > 5) {
+        int temperature = 7;
+        if (temperature > 5) {
             System.out.println("Сегодня тепло, можно идти без шапки.");
         } else {
             System.out.println("На улице холодно, нужно надеть шапку.");
         }
 
-        int speedMax = 70;
-        int speedMin = 55;
-        System.out.println("Если скорость " + speedMax + " км/ч.");
-        if (speedMax > 60) {
-            System.out.println("Придется заплатить штраф.");
+        int speed = 70;
+        if (speed > 60) {
+            System.out.println("Если скорость " + speed + " км/ ч, придется заплатить штраф.");
         } else {
-            System.out.println("Можно ездить спокойно.");
-        }
-        System.out.println("Если скорость " + speedMin + " км/ч.");
-        if (speedMin <= 60) {
-            System.out.println("Можно ездить спокойно.");
-        } else {
-            System.out.println("Придется заплатить штраф.");
+            System.out.println("Если скорость " + speed + " км/ч, можно ездить спокойно.");
         }
 
-        int ageForKindergarten = 3;
-        int ageForSchool = 14;
-        int ageForUniversity = 21;
-        int ageForJob = 28;
-        System.out.println("Если возраст человека равен " + ageForKindergarten + " года.");
-        if (ageForKindergarten >= 2 && ageForKindergarten <= 6) {
-            System.out.println("Ему нужно ходить в детский сад.");
+        int agePeople = 17;
+        if (agePeople >= 2 && agePeople <= 6) {
+            System.out.println("Если возраст человека равен " + agePeople + " лет, ему нужно ходить в детский сад.");
+        } else if (agePeople >= 7 && agePeople <= 17) {
+            System.out.println("Если возраст человека равен " + agePeople + " лет, ему нужно ходить в школу.");
+        } else if (agePeople >= 18 && agePeople <= 24) {
+            System.out.println("Если возраст человека равен " + agePeople + " лет, ему нужно ходить в университет.");
         } else {
-            System.out.println("Он не может посещать детский сад.");
-        }
-        System.out.println("Если возраст человека равен " + ageForSchool + " лет.");
-        if (ageForSchool >= 7 && ageForSchool <= 17) {
-            System.out.println("Ему нужно ходить в школу.");
-        } else {
-            System.out.println("Он не может посещать школу.");
-        }
-        System.out.println("Если возраст человека равен " + ageForUniversity + " года.");
-        if (ageForUniversity >= 18 && ageForUniversity <= 24) {
-            System.out.println("Ему нужно ходить в университет");
-        } else {
-            System.out.println("Он не может посещать университет");
-        }
-        System.out.println("Если возраст человека равен " + ageForJob + " лет.");
-        if (ageForJob > 24) {
-            System.out.println("Ему нужно ходить на работу");
-        } else {
-            System.out.println("Он не может ходить на работу");
+            System.out.println("Если возраст человека равен " + agePeople + " лет, ему нужно ходить на работу");
         }
 
         int ageChildren = 1;
